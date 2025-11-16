@@ -4,9 +4,16 @@ import requests
 from datetime import datetime, timedelta
 import base64
 from openai import OpenAI # type: ignore
-from openai_config import OPENAI_API_KEY
-from spotify_config import SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET
-from flask_config import SECRET_KEY
+from dotenv import load_dotenv
+import os
+load_dotenv()
+
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+SPOTIFY_CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID")
+SPOTIFY_CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET")
+SECRET_KEY = os.getenv("SECRET_KEY")
+
+
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = SECRET_KEY
