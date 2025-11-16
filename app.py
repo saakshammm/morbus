@@ -23,7 +23,7 @@ Session(app)
 
 # Spotify Configuration
 auth_str = f"{SPOTIFY_CLIENT_ID}:{SPOTIFY_CLIENT_SECRET}"
-SPOTIFY_REDIRECT_URI = 'http://127.0.0.1:8000/callback'
+SPOTIFY_REDIRECT_URI = 'https://morbus-7gvq.onrender.com/callback'
 SPOTIFY_AUTH_URL = "https://accounts.spotify.com/authorize"
 SPOTIFY_TOKEN_URL = "https://accounts.spotify.com/api/token"
 SPOTIFY_API_BASE = "https://api.spotify.com/v1"
