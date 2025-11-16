@@ -1,2 +1,0 @@
-SPOTIFY_CLIENT_ID = 'spotify-client-id' 
-SPOTIFY_CLIENT_SECRET = 'spotify-client-secret'
